@@ -1,4 +1,3 @@
-
 import requests 
 import xml.etree.ElementTree as ET
 
@@ -48,7 +47,7 @@ def main():
     loadPromotionsData()
 
     # parse xml file 
-    parseXML('promoData.xml')
+    parseXML('contentSpotlightData.xml')
 
 if __name__ == "__main__":
     main();
