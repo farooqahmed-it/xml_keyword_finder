@@ -1,23 +1,9 @@
-import requests 
 import xml.etree.ElementTree as ET
 
-def loadPromotionsData(): 
-  
-    # url of Promotions feed 
-    url = 'https://www.fishersci.com/libs/services/wcm/Exporter?type=content-spotlights&locale=en_US'
-  
-    # creating HTTP response object from given url 
-    resp = requests.get(url) 
-  
-    # saving the xml file 
-    with open('contentSpotlightData.xml', 'wb') as f: 
-        f.write(resp.content)
-        f.close() 
+def printPromoSpotlightRecord(record, keyword): 
 
-def printContentSpotlightRecord(record, keyword): 
-
-    print(keyword, ' : appeard on following page')
-    for pval in record.iterfind('PROP[@name="workbench.pageUrl"]/PVAL'):
+    print(keyword, ' : appeard on following rule(s)')
+    for pval in record.iterfind('PROP[@name="promo.promoUrl"]/PVAL'):
         print('\t', pval.text )
 
 def parseXML(xmlfile): 
@@ -33,21 +19,18 @@ def parseXML(xmlfile):
 
    file.close()  
 
-   print("Search for the presence of keywords on the existing content spotlight:")
+   print("Search for the presence of keywords on the sample promo xml:")
    print(keywords)
-   print("*********************************************************************************************************************************************")
+   print("***************************************************************")
 
    for record in records:
-     for pval in record.iterfind('PROP[@name="workbench.keyword"]/PVAL'):
+     for pval in record.iterfind('PROP[@name="promo.keyword"]/PVAL'):
         if (pval.text.strip().lower() in keywords): 
-            printContentSpotlightRecord(record, pval.text.strip().lower())
+            printPromoSpotlightRecord(record, pval.text.strip().lower())
 
 def main():
-    #Load promotions Data
-    loadPromotionsData()
-
     # parse xml file 
-    parseXML('contentSpotlightData.xml')
+    parseXML('promoData.xml')
 
 if __name__ == "__main__":
     main();

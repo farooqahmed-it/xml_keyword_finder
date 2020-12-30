@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<RECORDS type="promo-spotlights">
+<RECORD>
+<PROP name="promo.promoUrl">
+<PVAL>http://yoursite/promo/digital_timers.html</PVAL>
+</PROP>
+<PROP name="promoUrl.rulename">
+<PVAL>Make Sure the Time is Always in Sight </PVAL>
+</PROP>
+<PROP name="promo.keyword">
+<PVAL>digital timer</PVAL>
+</PROP>
+<PROP name="promo.keyword">
+<PVAL>digital timers</PVAL>
+</PROP>
+<PROP name="promo.keyword">
+<PVAL>lab timer</PVAL>
+</PROP>
+<PROP name="promo.keyword">
+<PVAL>timer</PVAL>
+</PROP>
+<PROP name="promo.keyword">
+<PVAL>timers</PVAL>
+</PROP>
+<PROP name="promo.keyword">
+<PVAL>traceable timer</PVAL>
+</PROP>
+</RECORD>
+<RECORD>
+<PROP name="promo.promoUrl">
+<PVAL>http://yoursite/promo/papers.html</PVAL>
+</PROP>
+<PROP name="promo.rulename">
+<PVAL>pH Meters, pH strips and pH Buffers</PVAL>
+</PROP>
+<PROP name="promo.keyword">
+<PVAL>ph papers</PVAL>
+</PROP>
+</RECORD>
+<RECORD>
+<PROP name="promo.promoUrl">
+<PVAL>http://yoursite/promo/weights.html</PVAL>
+</PROP>
+<PROP name="promo.rulename">
+<PVAL>Balance, Scales and Weighing</PVAL>
+</PROP>
+<PROP name="promo.keyword">
+<PVAL>calibration weights</PVAL>
+</PROP>
+<PROP name="promo.keyword">
+<PVAL>balances</PVAL>
+</PROP>
+<PROP name="promo.keyword">
+<PVAL>weighing</PVAL>
+</PROP>
+</RECORD>
+</RECORDS>
